@@ -298,7 +298,7 @@
 
 			function calltext(){
 			    $('.pmap').html('No data available at selected period, please select quarter');
-			    d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSusiqupt53OxkNROz2M90aH-SkymauDoePdrx3Khh_um9Ax2s-C-ku8LDqAtMx-HO3SugPg3lG48WM/pub?gid=0&single=true&output=csv',function(data){
+			    d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vT7SYTSqrrNt-goadyrUiC_voy3mxXGSzIbmShjv9T_p7laatoHoEQ9AwCr1d6TlgXg3kmOmzn7xsqE/pub?gid=898720655&single=true&output=csv',function(data){
 			        data.forEach(function(d,i){
 			            if(d.Period == periodselect){
 			                $('.pmap').html(d.text);
@@ -1127,7 +1127,7 @@
 		    d3.json('Adm2_SOM.geojson',function(jso){	
 	    		statesData = jso;
 	    		//call the original data
-	    		d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTZeucGZYHbcbWpAE3aQwaZmLSHgKVKS_AqAQooBAu3RizmsqKRomvuBPfNznm0IcslsvpR-UCBqHna/pub?gid=187263183&single=true&output=csv',function(data){
+	    		d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vT7SYTSqrrNt-goadyrUiC_voy3mxXGSzIbmShjv9T_p7laatoHoEQ9AwCr1d6TlgXg3kmOmzn7xsqE/pub?gid=1700045557&single=true&output=csv',function(data){
 		    		//set the data called to variable thedata
 		    		thedata = data;
 
